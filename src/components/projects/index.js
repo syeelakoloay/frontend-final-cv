@@ -1,4 +1,68 @@
+import { getDatabase, ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
+
 const Projects = () => {
+  const [project, setProject] = useState("");
+  const [project1, setProject1] = useState("");
+  const [project2, setProject2] = useState("");
+  const [project3, setProject3] = useState("");
+  const [project4, setProject4] = useState("");
+  const [project5, setProject5] = useState("");
+  const [project6, setProject6] = useState("");
+  const [project7, setProject7] = useState("");
+  const [project8, setProject8] = useState("");
+  const [project9, setProject9] = useState("");
+  const [project10, setProject10] = useState("");
+  const [project11, setProject11] = useState("");
+  const [role, setRole] = useState("");
+  const [role1, setRole1] = useState("");
+  const [role2, setRole2] = useState("");
+  const [role3, setRole3] = useState("");
+  const [role4, setRole4] = useState("");
+  const [role5, setRole5] = useState("");
+  const [role6, setRole6] = useState("");
+  const [role7, setRole7] = useState("");
+  const [role8, setRole8] = useState("");
+  const [role9, setRole9] = useState("");
+  const [role10, setRole10] = useState("");
+  const [role11, setRole11] = useState("");
+
+  useEffect(() => {
+    const db = getDatabase();
+
+    onValue(ref(db, "projects/accomplishments"), (snapshot) => {
+      if (snapshot.exists()) {
+        const data = snapshot.val();
+        setProject(data.project);
+        setProject1(data.project1);
+        setProject2(data.project2);
+        setProject3(data.project3);
+        setProject4(data.project4);
+        setProject5(data.project5);
+        setProject6(data.project6);
+        setProject7(data.project7);
+        setProject8(data.project8);
+        setProject9(data.project9);
+        setProject10(data.project10);
+        setProject11(data.project11);
+        setRole(data.role);
+        setRole1(data.role1);
+        setRole2(data.role2);
+        setRole3(data.role3);
+        setRole4(data.role4);
+        setRole5(data.role5);
+        setRole6(data.role6);
+        setRole7(data.role7);
+        setRole8(data.role8);
+        setRole9(data.role9);
+        setRole10(data.role10);
+        setRole11(data.role11);
+      } else {
+        console.log("No data available");
+      }
+    });
+  }, []);
+
   return (
     <section id="projects" className="services_area pt-115 pb-120">
       <div className="container">
@@ -27,12 +91,9 @@ const Projects = () => {
               </div>
               <div className="service_content">
                 <h4 className="service_title">
-                  <a href="#">
-                    Sistem Antrian Pemeriksanaan Kesehatan di Puskesmas Likpang,
-                    UNKLAB, 2024
-                  </a>
+                  <a href="#">{project}</a>
                 </h4>
-                <p>Leader, Full-Stack Developer</p>
+                <p>{role}</p>
               </div>
             </div>
           </div>
@@ -48,9 +109,9 @@ const Projects = () => {
               </div>
               <div className="service_content">
                 <h4 className="service_title">
-                  <a href="#">Bocawaya: Website Thrifting Shop, UNKLAB, 2024</a>
+                  <a href="#">{project1}</a>
                 </h4>
-                <p>Back-End Web Developer</p>
+                <p>{role1}</p>
               </div>
             </div>
           </div>
@@ -66,11 +127,9 @@ const Projects = () => {
               </div>
               <div className="service_content">
                 <h4 className="service_title">
-                  <a href="#">
-                    Redesign Website Fakultas Keperawatan UNKLAB, UNKLAB, 2024
-                  </a>
+                  <a href="#">{project2}</a>
                 </h4>
-                <p>Web Developer</p>
+                <p>{role2}</p>
               </div>
             </div>
           </div>
@@ -86,12 +145,9 @@ const Projects = () => {
               </div>
               <div className="service_content">
                 <h4 className="service_title">
-                  <a href="#">
-                    Optimalisasi Deteksi Penipuan Digital Menggunakan Teori
-                    Peluang dan Statistika, UNKLAB, 2024
-                  </a>
+                  <a href="#">{project3}</a>
                 </h4>
-                <p>Researcher</p>
+                <p>{role3}</p>
               </div>
             </div>
           </div>
@@ -107,12 +163,9 @@ const Projects = () => {
               </div>
               <div className="service_content">
                 <h4 className="service_title">
-                  <a href="#">
-                    Enhancing Oil Production Efficiency at PT Royal Coconut
-                    Through Lean Methodology, UNKLAB, 2025
-                  </a>
+                  <a href="#">{project4}</a>
                 </h4>
-                <p>Leader, Researcher</p>
+                <p>{role4}</p>
               </div>
             </div>
           </div>
@@ -128,12 +181,9 @@ const Projects = () => {
               </div>
               <div className="service_content">
                 <h4 className="service_title">
-                  <a href="#">
-                    Perancangan Sistem Informasi Pasien Penyakit Kronis (SIPPK)
-                    di Apotek Re'ra Farma, UNKLAB, 2025
-                  </a>
+                  <a href="#">{project5}</a>
                 </h4>
-                <p>Leader, Researcher, UI/UX Designer</p>
+                <p>{role5}</p>
               </div>
             </div>
           </div>
@@ -149,12 +199,9 @@ const Projects = () => {
               </div>
               <div className="service_content">
                 <h4 className="service_title">
-                  <a href="#">
-                    Pengembangan Aplikasi Berbasis AI (Artificial Intelligence)
-                    untuk Meningkatkan Kesehatan Mental, UNKLAB, 2025
-                  </a>
+                  <a href="#">{project6}</a>
                 </h4>
-                <p>Researcher</p>
+                <p>{role6}</p>
               </div>
             </div>
           </div>
@@ -170,12 +217,9 @@ const Projects = () => {
               </div>
               <div className="service_content">
                 <h4 className="service_title">
-                  <a href="#">
-                    Implementasi Odoo pada Proses Bisnis di Apotek Re'ra Farma,
-                    UNKLAB, 2025
-                  </a>
+                  <a href="#">{project7}</a>
                 </h4>
-                <p>Business Analyst, Researcher</p>
+                <p>{role7}</p>
               </div>
             </div>
           </div>
@@ -190,12 +234,9 @@ const Projects = () => {
               </div>
               <div className="service_content">
                 <h4 className="service_title">
-                  <a href="#">
-                    Redesign SIU (Sistem Informasi UNKLAB) Berdasarkan 10
-                    Prinsip Umum Jakob Nielsen, UNKLAB, 2025
-                  </a>
+                  <a href="#">{project8}</a>
                 </h4>
-                <p>Leader, UI/UX Designer</p>
+                <p>{role8}</p>
               </div>
             </div>
           </div>
@@ -210,12 +251,9 @@ const Projects = () => {
               </div>
               <div className="service_content">
                 <h4 className="service_title">
-                  <a href="#">
-                    Pengembangan Aplikasi Holistik untuk Kesehatan Mental:
-                    Keseimbangan Teknologi dan Sosial, UNKLAB, 2025
-                  </a>
+                  <a href="#">{project9}</a>
                 </h4>
-                <p>Leader, Business Analyst, Researcher</p>
+                <p>{role9}</p>
               </div>
             </div>
           </div>
@@ -230,9 +268,9 @@ const Projects = () => {
               </div>
               <div className="service_content">
                 <h4 className="service_title">
-                  <a href="#">Calico: Aplikasi Kuis Mahasiswa, UNKLAB, 2025</a>
+                  <a href="#">{project10}</a>
                 </h4>
-                <p>Full-Stack Developer</p>
+                <p>{role10}</p>
               </div>
             </div>
           </div>
@@ -247,12 +285,9 @@ const Projects = () => {
               </div>
               <div className="service_content">
                 <h4 className="service_title">
-                  <a href="#">
-                    Redesign Presensi UNKLAB Berdasarkan 10 Prinsip Umum Jakob
-                    Nielsen, UNKLAB, 2025
-                  </a>
+                  <a href="#">{project11}</a>
                 </h4>
-                <p>UI/UX Designer</p>
+                <p>{role11}</p>
               </div>
             </div>
           </div>
