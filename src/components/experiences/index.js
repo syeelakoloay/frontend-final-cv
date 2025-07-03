@@ -55,9 +55,7 @@ const Experiences = () => {
                       data-wow-delay="0.8s"
                     >
                       <div className="service_content">
-                        <h4 className="service_title">
-                          <a href="#">{experience}</a>
-                        </h4>
+                        <h4 className="service_title">{experience}</h4>
                         <p>{role}</p>
                       </div>
                     </div>
@@ -69,9 +67,7 @@ const Experiences = () => {
                       data-wow-delay="0.8s"
                     >
                       <div className="service_content">
-                        <h4 className="service_title">
-                          <a href="#">{experience1}</a>
-                        </h4>
+                        <h4 className="service_title">{experience1}</h4>
                         <p>{role1}</p>
                       </div>
                     </div>
@@ -83,9 +79,7 @@ const Experiences = () => {
                       data-wow-delay="0.8s"
                     >
                       <div className="service_content">
-                        <h4 className="service_title">
-                          <a href="#">{experience2}</a>
-                        </h4>
+                        <h4 className="service_title">{experience2}</h4>
                         <p>{role2}</p>
                       </div>
                     </div>
