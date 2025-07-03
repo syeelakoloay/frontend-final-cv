@@ -1,5 +1,3 @@
-import syeela from "../../assets/img/syeela.png";
-
 import { getDatabase, ref, onValue, set } from "firebase/database";
 import { useEffect, useState } from "react";
 
