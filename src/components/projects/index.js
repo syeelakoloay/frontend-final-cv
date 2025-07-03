@@ -90,9 +90,7 @@ const Projects = () => {
                 <i className="lni lni-ux"></i>
               </div>
               <div className="service_content">
-                <h4 className="service_title">
-                  <a href="#">{project}</a>
-                </h4>
+                <h4 className="service_title">{project}</h4>
                 <p>{role}</p>
               </div>
             </div>
@@ -108,9 +106,7 @@ const Projects = () => {
                 <i className="lni lni-layout"></i>
               </div>
               <div className="service_content">
-                <h4 className="service_title">
-                  <a href="#">{project1}</a>
-                </h4>
+                <h4 className="service_title">{project1}</h4>
                 <p>{role1}</p>
               </div>
             </div>
@@ -126,9 +122,7 @@ const Projects = () => {
                 <i className="lni lni-layout"></i>
               </div>
               <div className="service_content">
-                <h4 className="service_title">
-                  <a href="#">{project2}</a>
-                </h4>
+                <h4 className="service_title">{project2}</h4>
                 <p>{role2}</p>
               </div>
             </div>
@@ -144,9 +138,7 @@ const Projects = () => {
                 <i className="lni lni-bullhorn"></i>
               </div>
               <div className="service_content">
-                <h4 className="service_title">
-                  <a href="#">{project3}</a>
-                </h4>
+                <h4 className="service_title">{project3}</h4>
                 <p>{role3}</p>
               </div>
             </div>
@@ -162,9 +154,7 @@ const Projects = () => {
                 <i className="lni lni-briefcase"></i>
               </div>
               <div className="service_content">
-                <h4 className="service_title">
-                  <a href="#">{project4}</a>
-                </h4>
+                <h4 className="service_title">{project4}</h4>
                 <p>{role4}</p>
               </div>
             </div>
@@ -180,9 +170,7 @@ const Projects = () => {
                 <i className="lni lni-code"></i>
               </div>
               <div className="service_content">
-                <h4 className="service_title">
-                  <a href="#">{project5}</a>
-                </h4>
+                <h4 className="service_title">{project5}</h4>
                 <p>{role5}</p>
               </div>
             </div>
@@ -198,9 +186,7 @@ const Projects = () => {
                 <i className="lni lni-code"></i>
               </div>
               <div className="service_content">
-                <h4 className="service_title">
-                  <a href="#">{project6}</a>
-                </h4>
+                <h4 className="service_title">{project6}</h4>
                 <p>{role6}</p>
               </div>
             </div>
@@ -216,9 +202,7 @@ const Projects = () => {
                 <i className="lni lni-bullhorn"></i>
               </div>
               <div className="service_content">
-                <h4 className="service_title">
-                  <a href="#">{project7}</a>
-                </h4>
+                <h4 className="service_title">{project7}</h4>
                 <p>{role7}</p>
               </div>
             </div>
@@ -233,9 +217,7 @@ const Projects = () => {
                 <i className="lni lni-layout"></i>
               </div>
               <div className="service_content">
-                <h4 className="service_title">
-                  <a href="#">{project8}</a>
-                </h4>
+                <h4 className="service_title">{project8}</h4>
                 <p>{role8}</p>
               </div>
             </div>
@@ -250,9 +232,7 @@ const Projects = () => {
                 <i className="lni lni-code"></i>
               </div>
               <div className="service_content">
-                <h4 className="service_title">
-                  <a href="#">{project9}</a>
-                </h4>
+                <h4 className="service_title">{project9}</h4>
                 <p>{role9}</p>
               </div>
             </div>
@@ -267,9 +247,7 @@ const Projects = () => {
                 <i className="lni lni-code"></i>
               </div>
               <div className="service_content">
-                <h4 className="service_title">
-                  <a href="#">{project10}</a>
-                </h4>
+                <h4 className="service_title">{project10}</h4>
                 <p>{role10}</p>
               </div>
             </div>
@@ -284,9 +262,7 @@ const Projects = () => {
                 <i className="lni lni-layout"></i>
               </div>
               <div className="service_content">
-                <h4 className="service_title">
-                  <a href="#">{project11}</a>
-                </h4>
+                <h4 className="service_title">{project11}</h4>
                 <p>{role11}</p>
               </div>
             </div>
