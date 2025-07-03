@@ -7,7 +7,6 @@ import Footer from "./components/footer";
 function App() {
   return (
     <div>
-      <title>Syeela</title>
       <Hero />
       <Intro />
       <Projects />
