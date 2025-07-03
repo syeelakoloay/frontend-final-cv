@@ -1,4 +1,26 @@
+import { getDatabase, ref, child, get, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
+
 const Hero = () => {
+  const [title, setTitle] = useState("");
+  const [subtitle, setSubtitle] = useState("");
+  const [description, setDescription] = useState("");
+
+  useEffect(() => {
+    const db = getDatabase();
+
+    onValue(ref(db, "hero/"), (snapshot) => {
+      if (snapshot.exists()) {
+        const data = snapshot.val();
+        setTitle(data.title);
+        setSubtitle(data.subtitle);
+        setDescription(data.description);
+      } else {
+        console.log("No data available");
+      }
+    });
+  }, []);
+
   return (
     <section id="hero" className="header_area">
       <div className="header_navbar">
@@ -49,21 +71,21 @@ const Hero = () => {
                   data-wow-duration="1.3s"
                   data-wow-delay="0.2s"
                 >
-                  Hi, I'm Syeela!
+                  {title}
                 </h5>
                 <h2
                   className="header_title wow fadeInUp"
                   data-wow-duration="1.3s"
                   data-wow-delay="0.5s"
                 >
-                  UI/UX Designer & Full-Stack Developer
+                  {subtitle}
                 </h2>
                 <p
                   className="wow fadeInUp"
                   data-wow-duration="1.3s"
                   data-wow-delay="1.1s"
                 >
-                  Have a project in mind? Let's collaborate!
+                  {description}
                 </p>
                 <a
                   href="mailto: koloaysyeela@gmail.com"

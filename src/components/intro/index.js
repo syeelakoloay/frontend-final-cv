@@ -13,7 +13,7 @@ const Intro = () => {
             >
               <img src={syeela} alt="Syeela" />
               <div className="about_shape"></div>
-            </div>{" "}
+            </div>
           </div>
           <div className="col-lg-6">
             <div
@@ -29,7 +29,7 @@ const Intro = () => {
                   <li></li>
                   <li></li>
                 </ul>
-              </div>{" "}
+              </div>
               <p>
                 I’m an Information System student at Universitas Klabat
                 (UNKLAB), working toward my S.Kom degree by 2026. Fun fact,
@@ -42,10 +42,21 @@ const Intro = () => {
                 marathon. But honestly, nothing beats just being comfortable at
                 home.
               </p>
+              <p className="skill_title" style={{ color: "#fff" }}>
+                Fullname: Syeela Michelle Putri Koloay
+              </p>
+              <p className="skill_title" style={{ color: "#fff" }}>
+                Date of Birth: June 8, 2004
+              </p>
+              <p className="skill_title" style={{ color: "#fff" }}>
+                Citizenship: Indonesia
+              </p>
               <div className="about_skills pt-15">
                 <div className="skill_item mt-20">
                   <div className="skill_header">
-                    <h6 className="skill_title">Problem-solving</h6>
+                    <p className="skill_title" style={{ color: "#fff" }}>
+                      Problem-solving
+                    </p>
                     <div className="skill_percentage">
                       <p>
                         <span className="counter">90</span>%
@@ -60,10 +71,12 @@ const Intro = () => {
                       ></div>
                     </div>
                   </div>
-                </div>{" "}
+                </div>
                 <div className="skill_item mt-20">
                   <div className="skill_header">
-                    <h6 className="skill_title">Adaptability</h6>
+                    <p className="skill_title" style={{ color: "#fff" }}>
+                      Adaptability
+                    </p>
                     <div className="skill_percentage">
                       <p>
                         <span className="counter">92</span>%
@@ -78,10 +91,12 @@ const Intro = () => {
                       ></div>
                     </div>
                   </div>
-                </div>{" "}
+                </div>
                 <div className="skill_item mt-20">
                   <div className="skill_header">
-                    <h6 className="skill_title">Attention to detail</h6>
+                    <p className="skill_title" style={{ color: "#fff" }}>
+                      Attention to detail
+                    </p>
                     <div className="skill_percentage">
                       <p>
                         <span className="counter">94</span>%
@@ -96,10 +111,12 @@ const Intro = () => {
                       ></div>
                     </div>
                   </div>
-                </div>{" "}
+                </div>
                 <div className="skill_item mt-20">
                   <div className="skill_header">
-                    <h6 className="skill_title">Communication</h6>
+                    <p className="skill_title" style={{ color: "#fff" }}>
+                      Communication
+                    </p>
                     <div className="skill_percentage">
                       <p>
                         <span className="counter">92</span>%
@@ -114,11 +131,13 @@ const Intro = () => {
                       ></div>
                     </div>
                   </div>
-                </div>{" "}
-              </div>{" "}
+                </div>
+              </div>
               <div className="skill_item mt-20">
                 <div className="skill_header">
-                  <h6 className="skill_title">Python, JavaScript, HTML</h6>
+                  <p className="skill_title" style={{ color: "#fff" }}>
+                    Python, JavaScript, HTML
+                  </p>
                   <div className="skill_percentage">
                     <p>
                       <span className="counter">88</span>%
@@ -133,10 +152,12 @@ const Intro = () => {
                     ></div>
                   </div>
                 </div>
-              </div>{" "}
+              </div>
               <div className="skill_item mt-20">
                 <div className="skill_header">
-                  <h6 className="skill_title">Git, GitHub</h6>
+                  <p className="skill_title" style={{ color: "#fff" }}>
+                    Git, GitHub
+                  </p>
                   <div className="skill_percentage">
                     <p>
                       <span className="counter">90</span>%
@@ -151,10 +172,12 @@ const Intro = () => {
                     ></div>
                   </div>
                 </div>
-              </div>{" "}
+              </div>
               <div className="skill_item mt-20">
                 <div className="skill_header">
-                  <h6 className="skill_title">Whimsical, Figma, Canva</h6>
+                  <p className="skill_title" style={{ color: "#fff" }}>
+                    Whimsical, Figma, Canva
+                  </p>
                   <div className="skill_percentage">
                     <p>
                       <span className="counter">94</span>%
@@ -169,10 +192,12 @@ const Intro = () => {
                     ></div>
                   </div>
                 </div>
-              </div>{" "}
+              </div>
               <div className="skill_item mt-20">
                 <div className="skill_header">
-                  <h6 className="skill_title">Word, Excel, PowerPoint</h6>
+                  <p className="skill_title" style={{ color: "#fff" }}>
+                    Word, Excel, PowerPoint
+                  </p>
                   <div className="skill_percentage">
                     <p>
                       <span className="counter">96</span>%
@@ -187,11 +212,11 @@ const Intro = () => {
                     ></div>
                   </div>
                 </div>
-              </div>{" "}
-            </div>{" "}
+              </div>
+            </div>
           </div>
-        </div>{" "}
-      </div>{" "}
+        </div>
+      </div>
     </section>
   );
 };
