@@ -1,4 +1,32 @@
-const Experience = () => {
+import { getDatabase, ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
+
+const Experiences = () => {
+  const [experience, setExperience] = useState("");
+  const [experience1, setExperience1] = useState("");
+  const [experience2, setExperience2] = useState("");
+  const [role, setRole] = useState("");
+  const [role1, setRole1] = useState("");
+  const [role2, setRole2] = useState("");
+
+  useEffect(() => {
+    const db = getDatabase();
+
+    onValue(ref(db, "experiences/affiliation/"), (snapshot) => {
+      if (snapshot.exists()) {
+        const data = snapshot.val();
+        setExperience(data.experience);
+        setExperience1(data.experience1);
+        setExperience2(data.experience2);
+        setRole(data.role);
+        setRole1(data.role1);
+        setRole2(data.role2);
+      } else {
+        console.log("No data available");
+      }
+    });
+  }, []);
+
   return (
     <section id="experience" className="call_to_action_area">
       <div className="container">
@@ -11,7 +39,7 @@ const Experience = () => {
             <div className="col-lg-12">
               <div className="call_to_action_content">
                 <div className="section_title text-center pb-30">
-                  <h5 className="sub_title">Experience</h5>
+                  <h5 className="sub_title">Experiences</h5>
                   <h3 className="main_title">Affiliation</h3>
                   <ul className="line">
                     <li></li>
@@ -28,13 +56,9 @@ const Experience = () => {
                     >
                       <div className="service_content">
                         <h4 className="service_title">
-                          <a href="#">
-                            Member of Student Representative Council (OSIS) of
-                            UNKLAB High School
-                          </a>
+                          <a href="#">{experience}</a>
                         </h4>
-                        <p>UNKLAB</p>
-                        <p>2021-2022</p>
+                        <p>{role}</p>
                       </div>
                     </div>
                   </div>
@@ -46,13 +70,9 @@ const Experience = () => {
                     >
                       <div className="service_content">
                         <h4 className="service_title">
-                          <a href="#">
-                            Vice Secretary of UNKLAB Virtue in Computer Science
-                            (UVICS)
-                          </a>
+                          <a href="#">{experience1}</a>
                         </h4>
-                        <p>UNKLAB</p>
-                        <p>2024-2025</p>
+                        <p>{role1}</p>
                       </div>
                     </div>
                   </div>{" "}
@@ -64,13 +84,9 @@ const Experience = () => {
                     >
                       <div className="service_content">
                         <h4 className="service_title">
-                          <a href="#">
-                            Secretary of PROXOCORIS International Competition
-                            2025
-                          </a>
+                          <a href="#">{experience2}</a>
                         </h4>
-                        <p>UNKLAB</p>
-                        <p>2025</p>
+                        <p>{role2}</p>
                       </div>
                     </div>
                   </div>{" "}
@@ -84,4 +100,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Experiences;

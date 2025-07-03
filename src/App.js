@@ -1,7 +1,7 @@
 import Hero from "./components/hero";
 import Intro from "./components/intro";
 import Projects from "./components/projects";
-import Experience from "./components/experience";
+import Experiences from "./components/experiences";
 import Footer from "./components/footer";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <Hero />
       <Intro />
       <Projects />
-      <Experience />
+      <Experiences />
       <Footer />
     </div>
   );
