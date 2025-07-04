@@ -47,7 +47,7 @@ const Intro = () => {
     <section
       id="intro"
       className="about_area pt-70 pb-120"
-      style={{ color: "#ffffff" }}
+      style={{ color: "#fff" }}
     >
       <div className="container">
         <div className="row align-items-center justify-content-center">
@@ -87,80 +87,96 @@ const Intro = () => {
                   <div className="col-md-6">
                     <div
                       className="card skill_card mt-20"
-                      style={{ backgroundColor: "#297559", color: "#ffffff" }}
+                      style={{ backgroundColor: "#297559" }}
                     >
                       <div className="card-body">
-                        <p className="skill_title">{skill}</p>
+                        <p className="skill_title" style={{ color: "#fff" }}>
+                          {skill}
+                        </p>
                       </div>
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div
                       className="card skill_card mt-20"
-                      style={{ backgroundColor: "#297559", color: "#ffffff" }}
+                      style={{ backgroundColor: "#297559" }}
                     >
                       <div className="card-body">
-                        <p className="skill_title">{skill1}</p>
+                        <p className="skill_title" style={{ color: "#fff" }}>
+                          {skill1}
+                        </p>
                       </div>
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div
                       className="card skill_card mt-20"
-                      style={{ backgroundColor: "#297559", color: "#ffffff" }}
+                      style={{ backgroundColor: "#297559" }}
                     >
                       <div className="card-body">
-                        <p className="skill_title">{skill2}</p>
+                        <p className="skill_title" style={{ color: "#fff" }}>
+                          {skill2}
+                        </p>
                       </div>
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div
                       className="card skill_card mt-20"
-                      style={{ backgroundColor: "#297559", color: "#ffffff" }}
+                      style={{ backgroundColor: "#297559" }}
                     >
                       <div className="card-body">
-                        <p className="skill_title">{skill3}</p>
+                        <p className="skill_title" style={{ color: "#fff" }}>
+                          {skill3}
+                        </p>
                       </div>
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div
                       className="card skill_card mt-20"
-                      style={{ backgroundColor: "#297559", color: "#ffffff" }}
+                      style={{ backgroundColor: "#297559" }}
                     >
                       <div className="card-body">
-                        <p className="skill_title">{skill4}</p>
+                        <p className="skill_title" style={{ color: "#fff" }}>
+                          {skill4}
+                        </p>
                       </div>
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div
                       className="card skill_card mt-20"
-                      style={{ backgroundColor: "#297559", color: "#ffffff" }}
+                      style={{ backgroundColor: "#297559" }}
                     >
                       <div className="card-body">
-                        <p className="skill_title">{skill5}</p>
+                        <p className="skill_title" style={{ color: "#fff" }}>
+                          {skill5}
+                        </p>
                       </div>
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div
                       className="card skill_card mt-20"
-                      style={{ backgroundColor: "#297559", color: "#ffffff" }}
+                      style={{ backgroundColor: "#297559" }}
                     >
                       <div className="card-body">
-                        <p className="skill_title">{skill6}</p>
+                        <p className="skill_title" style={{ color: "#fff" }}>
+                          {skill6}
+                        </p>
                       </div>
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div
                       className="card skill_card mt-20"
-                      style={{ backgroundColor: "#297559", color: "#ffffff" }}
+                      style={{ backgroundColor: "#297559" }}
                     >
                       <div className="card-body">
-                        <p className="skill_title">{skill7}</p>
+                        <p className="skill_title" style={{ color: "#fff" }}>
+                          {skill7}
+                        </p>
                       </div>
                     </div>
                   </div>
